@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+- Always consult `guest-chat-velin.md` before writing code.
+- Build all UI components using Tailwind CSS and follow the existing mobile-first design patterns defined in the project.
+- For authentication, only use Supabase Anonymous Auth via `supabase.auth.signInAnonymously()`. This application does not handle email/password logins.
