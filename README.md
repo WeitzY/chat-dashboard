@@ -1,10 +1,14 @@
 # Guest Chat (Portfolio)
 
-👉 **[💬 Live Guest Chat](https://chat-dashboard-tau-seven.vercel.app/)**
+👉 **[🌐 Staff Dashboard Live](https://staff-dashboard-beryl.vercel.app/login)**
 
-👉 **[📂 Chat Repo](https://github.com/WeitzY/chat-dashboard)**
+Demo account: `resume@test.com` / `Resume123` *(read-only — editing disabled)*
 
-👉 **[📂 Functions Repo](https://github.com/WeitzY/core-dashboard-staff)**
+👉 **[💬 Guest Chat Live](https://chat-dashboard-tau-seven.vercel.app/)**
+
+👉 **[📂 Staff Dashboard Repo](https://github.com/WeitzY/staff-dashboard)**
+👉 **[📂 Guest Chat Repo](https://github.com/WeitzY/chat-dashboard)**
+👉 **[📂 Core Functions Repo](https://github.com/WeitzY/core-dashboard-staff)**
 
 ---
 
