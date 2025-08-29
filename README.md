@@ -1,47 +1,71 @@
-# Guest Chat (Resume Project)
+# Guest Chat (Portfolio)
 
-A mobile-first Next.js app where hotel guests chat with an AI concierge. Each message is stateless by design: Guest message → AI answers from FAQs/items → optional request is created. No long context or history.
+👉 **[💬 Live Guest Chat](https://chat-dashboard-tau-seven.vercel.app/)**
 
-## Highlights recruiters care about
-- Built with Next.js 15 + React 19, Tailwind CSS 4, TypeScript
-- Clean, mobile-first UI with Shadcn primitives
-- Anonymous auth with Supabase; minimal, production-ready data access
-- Edge Function integration ready for AI responses
+👉 **[📂 Chat Repo](https://github.com/WeitzY/chat-dashboard)**
 
-## What works now
-- Onboarding overlay collects name, room, language and creates a `guests` row
-- Anonymous session created; guest info persisted via cookie (1 hour)
-- Chat UI with greeting, per-message AI replies via Edge Function endpoint hook
-- Language switcher; on mobile, language names are abbreviated (EN/ES/…)
+👉 **[📂 Functions Repo](https://github.com/WeitzY/core-dashboard-staff)**
 
-## Known trade-offs (intentional for scope)
-- Stateless chat: no thread memory between messages
-- No server-persisted chat history yet
-- Public hotel fields must be granted via RLS/policy (see guest-chat.md)
+---
 
-## Run locally
-```bash
-npm i
-npm run dev
-```
-Env required:
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `NEXT_PUBLIC_TEST_HOTEL_ID`
+## About
+
+Mobile-first **Next.js app** where hotel guests chat with an AI concierge.
+Each message is **stateless** by design:
+Guest message → AI answers from FAQs/items → optional request created.
+*(No long context/history for simplicity in demo scope.)*
+
+---
+
+## What this showcases
+
+* **Modern stack**: Next.js 15, React 19, Tailwind v4, TypeScript
+* **UI/UX focus**: Mobile-first layout with Shadcn primitives
+* **Supabase**: Anonymous Auth, guests persisted for 1h via cookie
+* **Edge Function ready**: Hook integration for AI responses
+* **Language support**: Language switcher with mobile-friendly abbreviations
+
+---
+
+## Current features
+
+* Onboarding overlay → collects name, room, language, inserts into `guests` table
+* Guest session with Supabase anon auth (cookie persisted 1h)
+* AI chat: per-message replies via Edge Function endpoint
+* Simple, production-like data access rules (RLS enforced)
+
+---
+
+## Notes & trade-offs
+
+* Stateless per message (no persistent thread memory)
+* No server-side chat history yet
+* Public hotel fields controlled via RLS / policy (see `guest-chat.md`)
+
+---
 
 ## Tech
-- Next.js 15, React 19, TypeScript, Tailwind v4
-- Supabase JS v2 (Anonymous Auth only)
-- Shadcn UI building blocks
+
+* Next.js 15, React 19, Tailwind v4, TypeScript
+* Supabase v2 (Anonymous Auth only)
+* Shadcn UI primitives
+
+---
 
 ## Structure
-```text
-src/
-  app/            # layout, globals, page (signup overlay + chat)
-  components/     # chat UI, signup UI, ui primitives wrappers
-  lib/            # supabase client, cookies helpers
-  utils/          # languages, translations
+
+```
+src/app/        → Layout, globals, signup overlay + chat
+src/components/ → Chat UI, signup UI, UI wrappers
+src/lib/        → Supabase client, cookie helpers
+src/utils/      → Languages, translations
 ```
 
+---
+
 ## License
-Personal portfolio project. Not for production use without review.
+
+Personal **portfolio project**.
+Not for production use without review.
+
+Do you want me to also prepare a **short LinkedIn-style project summary** (3 bullets + link) so you can drop it directly under “Projects” in your profile without overwhelming detail?
